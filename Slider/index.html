@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Слайдер</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div class="slider">
+ 	  <div class="sliderItem fade">
+	    <img src="img/arani-mukherjee-P_zc7lXqXbI-unsplash.jpg" style="width:1000px; height: 600px;">
+	  </div>
+
+	  <div class="sliderItem fade">
+	    <img src="img/noaa-dcD1UEx2mYY-unsplash.jpg" style="width:1000px; height: 600px;">
+	  </div>
+
+	  <div class="sliderItem fade">
+	    <img src="img/yue-su--WX6S7utock-unsplash.jpg" style="width:1000px; height: 600px;">
+	  </div>
+
+	  <!-- Next and previous buttons -->
+	  <a class="prevBtn" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="nextBtn" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+	  <span class="bullit" onclick="currentSlide(1)"></span>
+	  <span class="bullit" onclick="currentSlide(2)"></span>
+	  <span class="bullit" onclick="currentSlide(3)"></span>
+	</div>
+
+	
+	
+
+	<script src="js/main.js"></script>
+</body>
+</html>
