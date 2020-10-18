@@ -1,0 +1,75 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+.burgerWrapper{
+	width: 35px;
+	height: 30px;
+	padding-top: 12px;
+	padding-left: 3px;
+	cursor: pointer;
+	.navBurger{
+		width: 30px;
+		background-color: #000;
+		height: 5px;
+		margin-bottom: 20px;
+		position: relative;
+		transition: background .4s ease-in;
+		&:after{
+			content: "";
+			width: 30px;
+			height: 5px;
+			position: absolute;
+			top: 10px;
+			background: #000;
+			transition: transform .2s ease-in, top .2s linear .2s;
+		}
+		&:before{
+			content: "";
+			width: 30px;
+			height: 5px;
+			position: absolute;
+			top: -10px;
+			background: #000;
+			transition: transform .2s ease-in, top .2s linear .2s;
+		}
+		&.navBurger-active{
+			background: transparent;
+			&:after{
+				transform: rotate(-45deg);
+				top: 0;
+				transition: top .2s linear, transform .2s ease-in .2s;
+			}
+			&:before{
+				transform: rotate(45deg);
+				top: 0;
+				transition: top .2s linear, transform .2s ease-in .2s;
+			}
+		}
+	}
+}
+
+.nav{
+	background-color: #212121;
+	opacity: 0;
+	width: 120px;
+	transition: all .2s ease-in;
+	padding-right: 30px;
+	.nav-group{
+		display: flex;
+		flex-direction: column;
+		padding-top: 20px;
+			& .navItem{
+				list-style: none;
+				margin-bottom: 20px;
+			& .navLink{
+				text-decoration: none;
+				color: #fff;
+			}
+		}
+	}
+	&.nav-active{
+		opacity: 1;
+	}
+}
+
