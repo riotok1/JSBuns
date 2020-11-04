@@ -1,0 +1,100 @@
+#team .teamTabs {
+  display: flex;
+  justify-content: center;
+}
+#team .teamTabs .teamTabContent {
+  display: none;
+  background-color: yellow;
+  margin-right: 50px;
+  cursor: pointer;
+}
+#team .teamTabs #MARK, #team .teamTabs #WAUGH {
+  display: block;
+}
+#team .teamTabs #MARK, #team .teamTabs #JACK, #team .teamTabs #JENNIFER, #team .teamTabs #LIZ {
+  width: 25%;
+  height: 460px;
+  background-color: #f5f0dd;
+}
+#team .teamTabs .teamTabsBtn {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+#team .teamTabs .teamTabsBtn .workSkills .workSkillsItem {
+  display: none;
+}
+#team .teamTabs .teamTabsBtn .workSkills .workSkillsItem .workTitle {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  color: #333333;
+  margin-bottom: 35px;
+}
+#team .teamTabs .teamTabsBtn .workSkills .workSkillsItem .workBody {
+  font-family: Open Sans;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 25px;
+  color: #4c4c4c;
+  width: 700px;
+  margin-bottom: 45px;
+}
+#team .teamTabs .teamTabsBtn .workSkills .workSkillsItem .workSocial .socialItem {
+  font-family: Open Sans;
+  font-style: italic;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #333333;
+  transition: all 0.2s linear;
+  margin-right: 30px;
+}
+#team .teamTabs .teamTabsBtn .workSkills .workSkillsItem .workSocial .socialItem:hover {
+  color: #ff2d2d;
+}
+#team .teamTabs .teamTabsBtn .workSkills .workSkillsItem .workSocial .socialItem:last-child {
+  margin-right: 0px;
+}
+#team .teamTabs .teamTabsBtn .workBtns {
+  display: flex;
+  margin-top: auto;
+}
+#team .teamTabs .teamTabsBtn .workBtns .workSotBtn {
+  width: 25%;
+  height: 230px;
+  background-color: #f5f0dd;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  margin-right: 30px;
+  position: relative;
+}
+#team .teamTabs .teamTabsBtn .workBtns .workSotBtn .workSotContent {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  background-color: #7a786e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  position: absolute;
+  transition: all 0.2s linear;
+  z-index: 0;
+  opacity: 0;
+  bottom: 0;
+  width: 100%;
+}
+#team .teamTabs .teamTabsBtn .workBtns .workSotBtn:hover .workSotContent {
+  z-index: 1;
+  opacity: 1;
+}
+#team .teamTabs .teamTabsBtn .workBtns .workSotBtn.active .workSotContent {
+  z-index: 1;
+  opacity: 1;
+}
+#team .teamTabs .teamTabsBtn .workBtns .workSotBtn:last-child {
+  margin-right: 0px;
+}
