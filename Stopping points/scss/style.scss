@@ -1,0 +1,164 @@
+body{
+	padding: 300px 650px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
+.globalPale{
+	display: flex;
+	width: 3px;
+	height: 500px;
+	background: #353541;
+	.pale{
+		position: relative;
+		.globalWrapper{
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin-left: -20px;
+			.wrapperTochka{
+				border: 3px solid #070707;
+				border-radius: 50%;
+				padding: 8px 8px;
+				background-color: #fff;
+				cursor: pointer;
+				margin-right: 20px;
+			}
+			.wrapperContent{
+
+			}
+			&:first-child{
+				margin-top: -42px;
+			}
+			&:nth-child(2){
+				top: 160px;
+			}
+			&:nth-child(3){
+				top: 285px;
+			}
+			&:nth-child(4){
+				top: 500px;
+			}
+			.tochka{
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				background: #fb6470;
+				border: 3px solid #070707;
+			}
+		}
+	}
+	.paleContent{
+		.paleItemContent{
+			width: 470px;
+			height: 150px;
+			color: #fff;
+			padding: 0px 0px 0px 20px;
+			background-color: #353541;
+			border: 1px solid #fff;
+			border-radius: 10px;
+			transition: all .1s linear;
+			padding-bottom: 10px;
+			.arrow{
+				position: relative;
+				background: #353541;
+				&:before{
+					content: ""; 
+					border: solid transparent;
+					position: absolute;    
+					left: -60px;    
+					margin-top: -135px;
+					border-right-color: #353541;
+					border-top: transparent;
+					border-width: 20px;
+					margin-left: 0;
+				}
+			}
+			.titleGroup{
+				display: flex;
+				flex-direction: column;
+				margin-bottom: -30px;
+				.contentTitle{
+					display: flex;
+					margin-bottom: -20px;
+					&>span{
+						font-family: Raleway;
+						&:first-child{
+							font-weight: 500;
+							font-size: 22px;
+							color: #fff;
+							margin-right: 25px;
+						}
+						&:last-child{
+							font-family: Raleway;
+							font-weight: 500;
+							font-size: 20px;
+							color: #d7d7d9;
+						}
+					}
+				}
+				.secondTitle{
+					font-family: Raleway;
+					font-size: 18px;
+					color: #c65763;
+				}
+			}
+			.contentBody{
+				font-family: Raleway;
+				font-size: 16px;
+				color: #fff;
+				line-height: 25px;
+				width: 320px;
+			}
+		}
+		.firstContent{
+			margin-left: 80px;
+			margin-top: -40px;
+			
+		}
+		.secondContent{
+			margin-left: -570px;
+			margin-top: -90px;
+			.arrow{
+				position: relative;
+				background: #353541;
+				&:before{
+					content: ""; 
+					border: solid transparent;
+					position: absolute;    
+					left: 470px;    
+					margin-top: -45px;
+					border-right-color: #353541;
+					border-top: transparent;
+					border-width: 20px;
+					margin-left: 0;
+					transform: rotate(180deg);
+				}
+			}
+		}
+		.thirdContent{
+			margin-left: 80px;
+			margin-top: 100px;
+		}
+		.forthContent{
+			margin-left: -570px;
+			margin-top: -80px;
+			.arrow{
+				position: relative;
+				background: #353541;
+				&:before{
+					content: ""; 
+					border: solid transparent;
+					position: absolute;    
+					left: 470px;    
+					margin-top: -45px;
+					border-right-color: #353541;
+					border-top: transparent;
+					border-width: 20px;
+					margin-left: 0;
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+}
